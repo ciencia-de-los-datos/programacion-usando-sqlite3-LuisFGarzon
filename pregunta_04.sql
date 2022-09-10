@@ -40,3 +40,15 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+with t1 as(
+  select
+  K0,
+  c16,
+  substr(t2.c16,1,1) as id
+  from tbl1 t2
+)
+select
+K0,
+c16
+from t1
+where k0=id;
