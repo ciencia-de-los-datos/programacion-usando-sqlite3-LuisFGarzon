@@ -38,3 +38,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT COUNT(*) from tbl0 t1 inner join tbl1 t2 on t1.k0=t2.k0 where strftime('%Y', t2.c14)="2018";
